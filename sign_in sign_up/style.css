@@ -54,8 +54,90 @@ html {
 }
 
 .welcome-div {
-    z-index: 100;
     position: absolute;
-    top: 10rem;
-    left: 5rem;
+    z-index: 100;
+    top: 25%;
+    left: 2rem;
+    text-align: center;
+    color: #eee;
+}
+
+.welcometxt {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.intro {
+    font-size: 1.2rem;
+}
+
+.signin-form {
+    height: 100%;
+    position: absolute;
+    left: 40%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 6rem;
+    align-items: center;
+}
+
+.signin-form h1 {
+    color: #3ab19b;
+    font-size: 3rem;
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-media i {
+    width: 3rem;
+    height: 3rem;
+    border: 0.1rem solid black;
+    margin: 1rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-form p {
+    font-size: 1.3rem;
+}
+
+.signin-input {
+    position: relative;
+}
+
+.signin-input input {
+    border: none;
+    background-color: #ddd;
+    width: 25rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    padding: 2rem;
+    font-size: 1.4rem;
+}
+
+.signin-input i {
+    position: absolute;
+    top: 1.6rem;
+    left: 0.7rem;
+    color: #555;
+    font-size: 1.2rem;
+}
+
+.button-rightside {
+    color: #eee;
+    background-color: #3ab19b;
+    border: none;
+    border: 0.1rem solid #eee;
+    width: 10rem;
+    height: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    border-radius: 15%;
 }
