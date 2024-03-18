@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: Quicksand, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(63, 63, 63);
+    display: grid;
+    place-items: center;
+}
+
+.logo {
+    width: 6rem;
+    height: 3rem;
+}
+
+.shoe1 {
+    width: 25rem;
+    height: 29rem;
+    position: absolute;
+    top: -5rem;
+    right: -9rem;
+}
+
+.top-card {
+    height: 50%;
+    background-color: rgb(39, 186, 227);
+    position: relative;
+    border-radius: 2rem 2rem 0 0;
+    padding: 2rem;
+}
+
+.bottom-card {
+    height: 50%;
+    background-color: #eee;
+    border-radius: 0 0 2rem 2rem;
+    display: grid;
+    padding-left: 2rem;
+}
+
+.card {
+    margin-top: 8rem;
+    width: 30rem;
+    height: 45rem;
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.9);
+    border-radius: 2rem;
+}
+
+.top-card h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #eee;
+}
+
+.top-card p {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    color: #eee;
+}
+
+.model {
+    display: flex;
+    align-items: center;
+}
