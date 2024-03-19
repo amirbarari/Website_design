@@ -1,0 +1,60 @@
+.container {
+    margin: 0;
+    padding: 0;
+    font: sans-serif;
+    width: 100vw;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    background-color: #e0dddd;
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    height: 20rem;
+    position: relative;
+    border-radius: 1rem;
+}
+
+.chip-img {
+    width: 2.6rem;
+    height: 2.5rem;
+}
+
+.top-card {
+    display: flex;
+}
+
+.top-card p {
+    position: absolute;
+    right: 3rem;
+    text-rendering: optimizeSpeed 2s;
+}
+
+.logo-img {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    right: 0rem;
+}
+
+.bottom-card {
+    background-image: linear-gradient(0deg, rgb(4, 102, 9), rgb(34, 2, 175));
+    border-radius: 1rem;
+    margin: 0.5rem;
+}
+
+.mountain-img {
+    width: 30rem;
+    height: 20rem;
+    position: absolute;
+    top: 0.1rem;
+    left: -2.5rem;
+}
+
+.info-top {
+    background-color: #bcbaba;
+    display: flex;
+}
