@@ -1,9 +1,10 @@
 .container {
-    margin: 0;
+    box-sizing: border-box;
+    margin: -0.5rem;
     padding: 0;
     font: sans-serif;
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     display: grid;
     place-items: center;
 }
@@ -16,6 +17,11 @@
     height: 17rem;
     position: relative;
     border-radius: 1rem;
+    box-shadow: 1rem 2rem 2rem rgba(0, 0, 0, 0.7);
+}
+
+.container.dark-mode .card {
+    background-color: #343434;
 }
 
 .chip-img {
@@ -79,6 +85,12 @@
     opacity: 0.8;
 }
 
+.container.dark-mode .info-top {
+    color: white;
+    background-color: #343131;
+    opacity: 0.9;
+}
+
 .card-number {
     position: absolute;
     top: -1rem;
@@ -110,4 +122,53 @@
     background-color: #b8b5b5;
     bottom: 1rem;
     opacity: 0.8;
+}
+
+.hesab-number {
+    margin-left: 7rem;
+}
+
+.container.dark-mode .info-bottom {
+    color: white;
+    background-color: #343131;
+    opacity: 0.9;
+}
+
+.toggle-mode {
+    background-color: #000000;
+    color: white;
+    margin: 1rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+}
+
+.container.dark-mode .toggle-mode {
+    animation-name: increaseWidth;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-iteration-count: none;
+}
+
+@keyframes increaseWidth {
+    0% {
+        top: 0;
+        border-radius: 50%;
+        background-color: #000000;
+    }
+
+    100% {
+        height: 97%;
+        width: 97%;
+        right: 0;
+        bottom: 0rem;
+        border-radius: 0%;
+        background-color: #262626;
+    }
 }
